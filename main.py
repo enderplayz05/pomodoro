@@ -59,7 +59,7 @@ class PomodoroApp(App):
         layout.add_widget(customization_layout)
 
         # Task Input Field
-        task_input_layout = BoxLayout(size_hint_y=None, height=40)
+        task_input_layout = BoxLayout(size_hint_y=None, height=80)
         self.task_input = TextInput(hint_text="Add a task", multiline=False)
         add_task_button = Button(text="Add", on_press=self.add_task)
         task_input_layout.add_widget(self.task_input)
@@ -117,7 +117,7 @@ class PomodoroApp(App):
     def add_task(self, instance):
         task_text = self.task_input.text
         if task_text:
-            task_layout = BoxLayout(size_hint_y=None, height=40)
+            task_layout = BoxLayout(size_hint_y=None, height=80)
 
             # CheckBox to mark task as done
             checkbox = CheckBox()
