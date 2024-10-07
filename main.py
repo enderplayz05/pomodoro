@@ -43,7 +43,7 @@ class PomodoroApp(App):
         layout.add_widget(header_layout)
 
         # Start/Stop Button
-        self.start_stop_button = Button(text="Start",on_press=self.toggle_timer)
+        self.start_stop_button = Button(text="Start", on_press=self.toggle_timer)
         layout.add_widget(self.start_stop_button)
 
         # Timer Customization
